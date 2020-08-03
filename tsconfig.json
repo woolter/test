@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "ES2018",
+        "baseUrl": ".",
+        "paths": {
+            "*": [ "./*" ],
+            "src/*": ["./src/*"],
+            "@pages/*": ["./src/pages/*"],
+            "@selectors/*": ["./src/selectors/*"],
+            "@utils/*": ["./src/utils/*"],
+        },
+        "types": ["node", "@wdio/sync", "@wdio/jasmine-framework", "@wdio/appium-service"],
+    },
+    "include": [
+        "./test/**/*.ts",
+        "./specs/**/*.ts",
+        "./src/**/*.ts",
+        "./config/**/*.ts",
+    ],
+    "exclude": [
+        "./node_modules"
+    ]
+}
